@@ -1,1 +1,112 @@
-[![⛅ CF Worker](https://github.com/bahrudinsahroni/bahrudinsahroni/actions/workflows/cf.yml/badge.svg)](https://github.com/bahrudinsahroni/bahrudinsahroni/actions/workflows/cf.yml)
+Current runner version: '2.311.0'
+Operating System
+Runner Image
+  Image: ubuntu-22.04
+  Version: 20231211.1.0
+  Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20231211.1/images/ubuntu/Ubuntu2204-Readme.md
+  Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20231211.1
+Runner Image Provisioner
+GITHUB_TOKEN Permissions
+  Actions: write
+  Checks: write
+  Contents: write
+  Deployments: write
+  Discussions: write
+  Issues: write
+  Metadata: read
+  Packages: write
+  Pages: write
+  PullRequests: write
+  RepositoryProjects: write
+  SecurityEvents: write
+  Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v3.3.0' (SHA:ac593985615ec2ede58e132d2e21d2b1cbd6127c)
+Download action repository 'cloudflare/wrangler-action@2.0.0' (SHA:4c10c1822abba527d820b29e6333e7f5dac2cabd)
+Complete job name: 🚀 Deploy worker
+2s
+Build container for action use: '/home/runner/work/_actions/cloudflare/wrangler-action/2.0.0/Dockerfile'.
+0s
+Run actions/checkout@v3.3.0
+Syncing repository: SonzaiEkkusu/EDtunnel
+Getting Git version info
+Temporarily overriding HOME='/home/runner/work/_temp/fc789cec-ce8d-42ce-8c69-837414696e79' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/EDtunnel/EDtunnel
+Deleting the contents of '/home/runner/work/EDtunnel/EDtunnel'
+Initializing the repository
+Disabling automatic garbage collection
+Setting up auth
+Fetching the repository
+Determining the checkout info
+Checking out the ref
+/usr/bin/git log -1 --format='%H'
+'b44476f931c435926c5db8ac2445cbacf1e47753'
+0s
+0s
+3s
+Run npm i
+npm WARN deprecated rollup-plugin-inject@3.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-inject.
+npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+
+added 108 packages, and audited 109 packages in 3s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+2 low severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+17s
+Run cloudflare/wrangler-action@2.0.0
+/usr/bin/docker run --name cea280b0d9cd104661a3160a1fac640530_0ec269 --label 1932ce --workdir /github/workspace --rm -e "GIT_REF" -e "WORKERS_ENV" -e "CLOUDFLARE_ACCOUNT_ID" -e "GIT_COMMIT_ID" -e "INPUT_APITOKEN" -e "INPUT_ENVIRONMENT" -e "INPUT_APIKEY" -e "INPUT_EMAIL" -e "INPUT_ACCOUNTID" -e "INPUT_WORKINGDIRECTORY" -e "INPUT_WRANGLERVERSION" -e "INPUT_SECRETS" -e "INPUT_PRECOMMANDS" -e "INPUT_POSTCOMMANDS" -e "INPUT_COMMAND" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/EDtunnel/EDtunnel":"/github/workspace" 1932ce:a280b0d9cd104661a3160a1fac640530
+npm WARN deprecated rollup-plugin-inject@3.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-inject.
+npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+
+added 69 packages, and audited 70 packages in 6s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Using API Token authentication
+Notice:  No command was provided, defaulting to 'publish'
+ ⛅️ wrangler 3.21.0
+-------------------
+▲ [WARNING] `wrangler publish` is deprecated and will be removed in the next major version.
+
+  Please use `wrangler deploy` instead, which accepts exactly the same arguments.
+
+
+Your worker has access to the following bindings:
+- Vars:
+  - UUID: "47fb0431-0383-4e50-9865-aae363465f0a"
+Total Upload: 24.62 KiB / gzip: 7.05 KiB
+Uploaded tutor (0.87 sec)
+Published tutor (3.57 sec)
+  https://tutor.sonzaix.workers.dev
+Current Deployment ID: bdd82fb3-7e74-4e7e-ad8d-cc9d1e3463cd
+0s
+Run echo "::notice::Deployed to ${WORKERS_ENV} / ${GIT_REF} @ ${COMMIT_SHA}"
+Notice: Deployed to  / refs/heads/main @ 
+0s
+Post job cleanup.
+/usr/bin/git version
+git version 2.43.0
+Temporarily overriding HOME='/home/runner/work/_temp/5f538d90-5d76-4e46-a1d2-79f357a157a0' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/EDtunnel/EDtunnel
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+http.https://github.com/.extraheader
+/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+0s
+Cleaning up orphan processes
