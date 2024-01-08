@@ -4,7 +4,7 @@
 # documentation.
 
 # This workflow will install Deno then run `deno lint` and `deno test`.
-# For more information see: https://github.com/denoland/setup-deno
+# For more information see: https://github.com/bahrudinsahroni/setup-deno
 
 name: Deno
 
@@ -26,8 +26,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup Deno
-        # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
+        # uses: bahrudinsahroni/setup-deno@v1
+        uses: bahrudinsahroni/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
         with:
           deno-version: v1.x
 
